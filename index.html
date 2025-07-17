@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live HTML/CSS/JS Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="editor">
+      <h2>HTML</h2>
+      <textarea id="html"><h1>Hello World</h1></textarea>
+      <h2>CSS</h2>
+      <textarea id="css">h1 { color: blue; }</textarea>
+      <h2>JS</h2>
+      <textarea id="js">console.log('Hello from JS');</textarea>
+    </div>
+    <div class="preview-container">
+      <h2>Live Preview</h2>
+      <iframe id="preview"></iframe>
+      <div class="buttons">
+        <button onclick="download()">Export</button>
+        <button onclick="copy()">Copy HTML</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
